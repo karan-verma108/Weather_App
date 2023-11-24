@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://icons-for-free.com/iconfiles/png/512/cloud+day+forecast+lightning+shine+storm+sun+weather+icon-1320183295537909806.png">
+    <title>Weather App - Mini Project - 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="card">
+        <!-- input-btn box  -->
+        <div class="input-btn">
+            <input id="search_input" type="text" placeholder="Enter city" class="input">
+            <button id="search_btn" class="btn">
+                <img src="https://static-00.iconduck.com/assets.00/search-icon-2044x2048-psdrpqwp.png" alt="">
+            </button>
+        </div>
+
+        <div class="white" id="extraText">
+            Type city/country name <br> to view details
+        </div>
+
+        <div id="weather_container" class="secondaryContainer">
+
+            <!-- weather text  -->
+            <div class="weatherText white">
+                <span class="white bigSpan">Weather in </span>
+                <span id="city" class="white bigSpan">Tokyo</span>
+            </div>
+
+            <!-- weather info  -->
+            <div class="weatherInfo white">
+                <span id="temp" class="white bigSpan">26.51°C</span>
+            </div>
+
+            <!-- more info  -->
+            <div class="moreInfoOne">
+                <img id="weather_img" src="./images/clouds.png" alt="">
+                <span id="description" class="white spanSize below">Scattered Clouds</span>
+            </div>
+            <div class="moreInfoTwo">
+                <span class="white spanSize">Humidity:</span>
+                <span id="humidity" class="white spanSize">88%</span>
+            </div>
+            <div class="moreInfoThree">
+                <span class="white spanSize">Wind speed:</span> 
+                <span id="wind" class="white spanSize">8.23 km/h</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

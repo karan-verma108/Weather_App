@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Ubuntu:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Ubuntu:wght@300;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* entire body  */
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background: url('https://cdn.wallpapersafari.com/26/95/Ck8zRu.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 0;
+    z-index: 1;
+    filter: blur(3px);
+}
+ 
+/* card  */
+.card{
+    width: 266px;
+    position: relative;
+    z-index: 4;
+    background-color: rgba(0, 0, 0, 0.649);
+    border-radius: 17px;
+    filter: drop-shadow(2px 4px 6px black);
+    padding: 0px 0px 41px 0px;
+}
+
+.input-btn{
+    width: 100%;
+    height: 20%;
+    position: relative;
+    z-index: 2;
+    padding: 25px 19px 1px 14px;
+}
+
+/* btn section  */
+.btn{
+    width: 29px;
+    height: 29px;
+    background-color: #212222;
+    border: none;
+    outline: none;
+    border-radius: 21px;
+    cursor: pointer;
+}
+
+.btn img{
+    width: 11px;
+    padding-top: 3px;
+}
+
+/* input field  */
+.input{
+    width: 71%;
+    border-radius: 11px;
+    padding: 4px 0px 4px 14px;
+    outline: none;
+    border: none;
+    background-color: #212222;
+    height: 18px;
+    font-size: 12px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.input:hover{
+    box-shadow: 0px 0px 4px whitesmoke;
+}
+
+/* placeholder  */
+::placeholder{
+    color: white;
+}
+
+/* utility class "white" */
+.white{
+    color: white;
+}
+
+.secondaryContainer{
+    padding-left: 18px;
+    margin-top: 17px;
+}
+
+.moreInfoOne{
+    width: 134px;
+    display: flex;
+    margin-top: 14px;
+    gap: 7px;
+}
+
+.moreInfoOne img{
+    width: 20%;
+}
+
+/* utility class "spanSize" */
+.spanSize{
+    font-size: 11px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* utility class "bigSpan" */
+.bigSpan{
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.weatherInfo{
+    margin-top: 10px;
+}
+
+.below{
+    padding-top: 6px;
+}
+
+.moreInfoTwo{
+    margin-top: 7px;
+}
+
+/* also known as secondaryContainer */
+#weather_container{
+    display: none;
+}
+
+/* the extra content   */
+#extraText{
+    font-family: 'Poppins', sans-serif;
+    padding-left: 18px;
+    padding-top: 17px;
+}
